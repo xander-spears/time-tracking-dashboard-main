@@ -8,6 +8,11 @@ main {
   display: grid;
   gap: 24px;
   margin: 24px;
+  max-width: 1075px;
+}
+
+footer {
+  align-self: end;
 }
 
 #user-title {
@@ -150,6 +155,12 @@ main {
 }
 
 @media (width >= 1000px) {
+  body {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+  }
+
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
