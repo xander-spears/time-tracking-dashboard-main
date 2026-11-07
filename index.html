@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Header Card-->
+      <div class="title-card">
+        <div class="title-header">
+          <div class="avatar">
+            <img src="./images/image-jeremy.png" />
+          </div>
+          <div id="user-title">
+            <h6>Report for</h6>
+            <h3>Jeremy Robson</h3>
+          </div>
+        </div>
+        <div class="filter-container">
+          <p id="daily-filter" data-timeframe="daily">Daily</p>
+          <p id="weekly-filter" data-timeframe="weekly">Weekly</p>
+          <p id="monthly-filter" data-timeframe="monthly">Monthly</p>
+        </div>
+      </div>
+
+      <!-- Work Card-->
+      <div class="stat-card" id="work-card">
+        <img src="./images/icon-work.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Work</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="work">32hrs</h3>
+            <p data-card="work">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play Card-->
+      <div class="stat-card" id="play-card">
+        <img src="./images/icon-play.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Play</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="play">32hrs</h3>
+            <p data-card="play">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Card-->
+      <div class="stat-card" id="study-card">
+        <img src="./images/icon-study.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Study</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="study">32hrs</h3>
+            <p data-card="study">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise Card-->
+      <div class="stat-card" id="exercise-card">
+        <img src="./images/icon-exercise.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Exercise</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="exercise">32hrs</h3>
+            <p data-card="exercise">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Card-->
+      <div class="stat-card" id="social-card">
+        <img src="./images/icon-social.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Social</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="social">32hrs</h3>
+            <p data-card="social">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self-Care Card-->
+      <div class="stat-card" id="self-care-card">
+        <img src="./images/icon-self-care.svg" class="background-icon" />
+        <div class="card-content">
+          <div class="title-row">
+            <h6>Self-Care</h6>
+            <div class="icon-wrapper">
+              <img src="./images/icon-ellipsis.svg" />
+            </div>
+          </div>
+          <div class="stat-row">
+            <h3 data-card="self care">32hrs</h3>
+            <p data-card="self care">last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

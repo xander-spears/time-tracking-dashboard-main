@@ -1,0 +1,11 @@
+:root {
+  --main-bg-color: hsl(226, 43%, 10%);
+  --card-bg-color: hsl(235, 46%, 20%);
+  --main-purple: hsl(246, 80%, 60%);
+  --work-background: hsl(15, 100%, 70%);
+  --play-background: hsl(195, 74%, 62%);
+  --study-background: hsl(348, 100%, 68%);
+  --exercise-background: hsl(145, 58%, 55%);
+  --social-background: hsl(264, 64%, 52%);
+  --self-care-background: hsl(43, 84%, 65%);
+}
